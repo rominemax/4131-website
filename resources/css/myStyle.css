@@ -1,0 +1,190 @@
+
+/* All style CSS info from https://www.w3schools.com/css/default.asp */
+/* Flexbox information from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.topNavBar {
+    background-color: rgb(95, 173, 129);
+    display: flex;
+    justify-content: space-around;
+    height: 2em;
+}
+
+.topNavBar a {
+    background-color: beige;
+    border-radius: 0.5em;
+    font-weight: bold;
+    color: black;
+    padding: 0.1em 0.3em;
+    margin: 0.3em;
+}
+
+/* Idea for hover selector from https://www.w3schools.com/cssref/sel_hover.asp */
+.topNavBar a:hover {
+    background-color: rgb(226, 190, 166);
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(218, 202, 169)
+}
+
+#myName {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: calc(2.5vh + 2.5vw + 2em);
+}
+
+#emeraldLakeContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#emeraldLake {
+    width: 50%;
+    border-style: solid;
+}
+
+#twoColumnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#aboutMeContentContainer, #hobbiesContainer {
+    text-align: left;
+    background-color: beige;
+    border-radius: 1em;
+    padding: 0.5em;
+    width: 30%;
+    margin: 1em;
+}
+
+#aboutMeContentHeader, #hobbiesContainerHeader {
+    text-align: center;
+}
+
+#aboutMeContentContainer strong {
+    color: red;
+}
+
+#aboutMeContentContainer em {
+    color: darkgreen;
+}
+
+#contactsTable, #contactsTable th {
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Hover added so its more obvious when hovering over a table header that you can sort  */
+#contactsTable th:hover {
+    cursor: pointer;
+}
+
+#contactsTable td {
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 5px;
+}
+
+/* Idea for hover selector from https://www.w3schools.com/cssref/sel_hover.asp */
+#contactsTable td.contactLocation:hover .contactsTableThumbnail {
+    display: block;
+}
+
+#tableOfContactsHeader {
+    text-align: center;
+}
+
+#contactsTable tr.oddRow {
+    background-color: beige;
+}
+
+#contactsTable tr.evenRow {
+    background-color: lightgray;
+}
+
+#contactsLayoutContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contactsTable td img {
+    width: 5em;
+    float: right;
+    margin: 0.1em;
+    display: none;
+}
+
+#previewImage {
+    width: 20em;
+    border: solid;
+}
+/* Border CSS added for iframe to replace "frameborder attribute". Fix was gotten from https://wiki.whatwg.org/wiki/Presentational_elements_and_attributes */
+#twoColumnWidgetContainer #widgetLeftColumnContainer #youtubeContainer iframe {
+    border: 0px;
+}
+
+#widgetHeader {
+    margin-left: 5%;
+}
+
+#twoColumnWidgetContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#twoColumnWidgetContainer #widgetLeftColumnContainer, #twoColumnWidgetContainer #widgetRightColumnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contactMeFormContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#contactMeFormContainer #contactMeForm {
+    background-color: beige;
+    border-radius: 1em;
+    padding: 1em;
+    width: 50%;
+    margin: 1em;
+    margin-top: 5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contactMeFormContainer #contactMeForm #contactMeFormHeader {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contactMeFormContainer #contactMeForm #formFieldset {
+    width: fit-content;
+}
+
+#contactMeFormContainer #contactMeForm #contactMeFormTwoColumnContainer {
+    display: flex;
+    justify-content: left;
+}
+
+#contactMeFormContainer #contactMeForm #formInputFieldsContainer {
+    width: 30%;
+}
+
+#contactMeFormContainer #contactMeForm #concernMessageBoxContainer {
+    width: 30%;
+    height: 30%;
+    margin: 5%;
+    margin-top: 10%;
+    padding: 0.5em;
+    border-style: solid;
+    border-color: rgb(235, 58, 58);
+    visibility: hidden;
+    font-weight: 600;
+}

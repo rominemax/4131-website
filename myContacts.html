@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <title>Contacts</title>
+    <link href="./resources/css/myStyle.css" rel="stylesheet">
+    <script src="./resources/js/myContacts.js" async></script>
+  </head>
+  <body>
+    <nav class="topNavBar">
+      <a href="myAboutMe.html">About Me</a>
+      <a href="myContacts.html">Contacts</a>
+      <a href="myWidgets.html">Widgets</a>
+      <a href="contactMe.html">Contact Me</a>
+    </nav>
+    <h1 id="tableOfContactsHeader">Table of Contacts</h1>
+    <div id="contactsLayoutContainer">
+      <div id="contactsTableContainer">
+        <table id="contactsTable">
+          <tr class="oddRow">
+            <th id="nameColumn">Name</th>
+            <th id="locationColumn">Location</th>
+            <th id="contactColumn">Contact Information</th>
+            <th id="emailColumn">email</th>
+            <th id="websiteColumn">website</th>
+          </tr>
+          <tr class="evenRow">
+            <td class="tableName">Kevin Wendt</td>
+            <td id="wendtLocation" class="contactLocation">
+              <img class="contactsTableThumbnail" src="resources/images/keller.jpg" alt="Keller Hall">
+              6-254 Kenneth H. Keller Hall<br>
+              200 Union Street SE<br>
+              Minneapolis, MN 55455
+            </td>
+            <td>Course Instructor CSCI 5801</td>
+            <td><a href="mailto:wendt@umn.edu">wendt@umn.edu</a></td>
+            <td>
+              <a href="https://cse.umn.edu/cs/kevin-wendt">CSE Staff: Kevin Wendt</a>
+            </td>
+          </tr>
+          <tr class="oddRow">
+            <td class="tableName">Daniel Kluver</td>
+            <td id="kluverLocation" class="contactLocation">
+              <img class="contactsTableThumbnail" src="resources/images/Shepherd.jpg" alt="Shepherd Hall">
+              389 Shepherd Labs<br>
+              100 Union St SE<br>
+              Minneapolis, MN 55455
+            </td>
+            <td>Course Intructor CSCI 4131</td>
+            <td><a href="mailto:kluve018@umn.edu">kluve018@umn.edu</a></td>
+            <td>
+              <a href="https://cse.umn.edu/cs/daniel-kluver"
+                >CSE Staff: Daniel Kluver</a
+              >
+            </td>
+          </tr>
+          <tr class="evenRow">
+            <td class="tableName">Daniel T. Orban</td>
+            <td id="orbanLocation" class="contactLocation">
+              <img class="contactsTableThumbnail" src="resources/images/keller.jpg" alt="Keller Hall">
+              6-198 Kenneth H. Keller Hall<br>
+              200 Union Street SE <br>
+              Minneapolis, MN 55455
+            </td>
+            <td>CSCI Course Instructor</td>
+            <td><a href="mailto:dtorban@umn.edu">dtorban@umn.edu</a></td>
+            <td>
+              <a href="https://cse.umn.edu/cs/dan-orban"
+                >CSE Staff: Daniel T. Orban</a
+              >
+            </td>
+          </tr>
+          <tr class="oddRow">
+            <td class="tableName">Goldy</td>
+            <td id="goldyLocation" class="contactLocation">
+              <img class="contactsTableThumbnail" src="resources/images/coffman.jpg" alt="Coffman Memorial Union">
+              300 Washington Ave SE <br>
+              Minneapolis, MN 55455
+            </td>
+            <td>U of M Mascot</td>
+            <td><a href="mailto:goldy@umn.edu">goldy@umn.edu</a></td>
+            <td>
+              <a
+                href="https://gophersports.com/sports/2018/5/21/sports-spirit-squad-spec-rel-goldy-gopher-html"
+                >Gopher Sports: Goldy Gopher</a
+              >
+            </td>
+          </tr>
+          <tr class="evenRow">
+            <td class="tableName">Joan Gabel</td>
+            <td id="gabelLocation" class="contactLocation">
+              <img class="contactsTableThumbnail" src="resources/images/morrill.jpg" alt="Morrill Hall">
+              202 Morrill Hall<br>
+              100 Church Street SE<br>
+              University of Minnesota<br>
+              Minneapolis, MN 55455
+            </td>
+            <td>U of M President</td>
+            <td><a href="mailto:upres@umn.edu">upres@umn.edu</a></td>
+            <td>
+              <a href="https://president.umn.edu/about">About President Gabel</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="previewImageContainer">
+        <img
+        id="previewImage" 
+        src="resources/images/gophers-mascot.png" 
+        alt="Gopher's Mascot"
+        >
+      </div>
+    </div>
+  </body>
+</html>

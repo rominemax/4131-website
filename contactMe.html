@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <title>Contact Me</title>
+    <link href="./resources/css/myStyle.css" rel="stylesheet">
+    <script src="./resources/js/contactMe.js" async></script>
+  </head>
+  <body>
+    <nav class="topNavBar">
+      <a href="myAboutMe.html">About Me</a>
+      <a href="myContacts.html">Contacts</a>
+      <a href="myWidgets.html">Widgets</a>
+      <a href="contactMe.html">Contact Me</a>
+    </nav>
+    
+    <div id="contactMeFormContainer">
+      <form id="contactMeForm" action="https://www-users.cselabs.umn.edu/~joh13266/contactMe.php" method="POST">
+        <h1 id="contactMeFormHeader">Contact Me</h1>
+        <div id="contactMeFormTwoColumnContainer">
+            <div id="formInputFieldsContainer">
+                <label for="formTitle">Title:</label> <br>
+                <input id="formTitle" name="postTitle" type="text" required> <br>
+                
+                <label for="formEmail">Email:</label> <br>
+                <input id="formEmail" name="email" type="email" required> <br>
+
+                <label for="formUsername">Username:</label> <br>
+                <input id="formUsername" name="username" type="text" required> <br>
+
+                <label for="formLink">Link:</label> <br>
+                <input id="formLink" name="link" type="url"> <br>
+
+                <!-- Fieldset and legend tag ideas from https://www.w3schools.com/tags/tag_fieldset.asp -->
+                <fieldset id="formFieldset">
+                    <legend>Category of Message:</legend>
+
+                    <input id="formQuestion" name="category" value="question" type="radio" required>
+                    <label for="formQuestion">Question</label> <br>
+
+                    <input id="formComment" name="category" value="comment" type="radio" required>
+                    <label for="formComment">Comment</label> <br>
+
+                    <input id="formConcern" name="category" value="concern" type="radio" required>
+                    <label for="formConcern">Concern</label> <br>
+                </fieldset>
+
+                <label for="formMessage">Message:</label> <br>
+                <textarea id="formMessage" name="message" rows="4" cols="50" required></textarea> <br>
+            </div>
+
+            <div id="concernMessageBoxContainer">
+                In order to best address your concern, please make
+                sure to list the specific way in which I have wronged you.
+            </div>
+        </div>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
